@@ -1,1 +1,179 @@
-hello world!
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ashetemele</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/icon" href="./img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="respo"></div>
+<div class="all">
+
+
+    <header>
+        <div class="head">
+            <img class="img1" src="./img/bmo.gif" alt="">
+            <h1>ashetemele</h1>
+            <div class="sub">Este es un sitio creados solo con HTML en
+
+                <img class="img2" src="./img/netlify.svg" alt="Netlify">
+            </div>
+        </div>
+    </header>
+    </div>
+
+    <section class="page">
+        <h2>Implementar una página HTML estática en netlify</h2>
+        <p class="t1">basado en: <a href="https://alphasec.io/how-to-deploy-a-static-website-with-netlify/">https://alphasec.io/how-to-deploy-a-static-website-with-netlify/</a></p>
+
+
+        <br>
+
+        <p><b>netlify es un de servicios en la nube.</b></p>
+
+        <p>Proporciona <b>alojamiento para apps</b> creadas con tecnologías como:</p>
+
+        <ul class="lang-list">
+            <li class="node"> <img src="./img/node.svg" alt="">Node.js</li>
+            <li class="ruby"> <img src="./img/ruby.svg" alt="">Ruby</li>
+            <li class="java"> <img src="./img/duke.svg" alt="">Java</li>
+            <li class="php"> <img src="./img/php.svg" alt="">PHP</li>
+            <li class="python"> <img src="./img/python.svg" alt="">Python</li>
+            <li class="go"> <img src="./img/go.svg" alt="">Go</li>
+            <li class="scala"> <img src="./img/scala.png" alt="">Scala</li>
+            <li class="clojure"> <img src="./img/clojure.svg" alt="">Clojure</li>
+        </ul>
+
+
+        <p><b>Requisitos para implementar una aplicación en netlify</b></p>
+
+        <ul class="note">
+            <li>Una cuenta de Github</li>
+            <li>Una cuenta de netlify</li>
+            <li>Git instalado en computador</li>
+        </ul>
+
+        <p><b>netlify solo aloja y admite aplicaciones</b> y no páginas estáticas,
+        para implementar nuestra página html estática haremos que netlify
+        interprete nuestro sitio web como una aplicación PHP.</p>
+
+        <h3><b>Pasos</b></h3>
+        <p class="pass">1) Crear un archivo <span class="ide1">index.php</span> con: <span class="ide2">&lt;?php include_once(“home.html”); ?&gt;</span></p>
+        <p class="pass">2) Crear un archivo <span class="ide1">home.html</span> con: <span class="ide2">&lt;h1&gt;hola netlify&lt;/h1&gt;</span></p>
+        <p class="pass">3) Crear un archivo <span class="ide1">composer.json</span> con <span class="ide2">{}</span>para que se reconozca como una aplicación PHP</li>
+        <p class="pass"><b>En la terminal o bash:</b></p>
+        <p class="pass">4) <code>git init</code> iniciar git</p>
+        <p class="pass">5) <code>git add .</code> agregar cambios</p>
+        <p class="pass">6) <code>git commit -m "desplegando"</code> comitear cambios</p>
+        <p class="pass">7) <code>netlify login</code> autetificarse en netlify</p>
+        <p class="pass">8) <code>netlify apps:create <i>nombre_de_app</i></code> crear app en netlify</span></p>
+        <p class="pass">9) <code>git push netlify master</code> subir cambios a netlify</p>
+        <p class="pass">10) Aquí está el enlace de tu app: <b class="alert1">https://nombre_de_app.netlifyapp.com</b></p>
+        <p class="pass">11) <code>git add .
+git commit -m "mensaje sobre cambios"
+git push netlify master
+</code>actualizar</p>
+
+        </div>
+
+        <h2>Cómo implementar una página HTML estática en Netlify</h2>
+        <p>Basado en el artículo: <a href="https://medium.com/@agavitalis/how-to-deploy-a-simple-static-html-website-on-netlify-492697238e48" target="_blank" rel="noopener noreferrer">Guía de Medium</a></p>
+        
+        <h3>Sobre Netlify</h3>
+        <p><b>Netlify es un servicio de alojamiento en la nube.</b> Ofrece hosting para aplicaciones creadas con tecnologías como:</p>
+        
+        <ul class="technology-list">
+            <li><img src="./img/node.svg" alt="Node.js">Node.js</li>
+            <li><img src="./img/ruby.svg" alt="Ruby">Ruby</li>
+            <li><img src="./img/duke.svg" alt="Java">Java</li>
+            <li><img src="./img/php.svg" alt="PHP">PHP</li>
+            <li><img src="./img/python.svg" alt="Python">Python</li>
+            <li><img src="./img/go.svg" alt="Go">Go</li>
+            <li><img src="./img/scala.png" alt="Scala">Scala</li>
+            <li><img src="./img/clojure.svg" alt="Clojure">Clojure</li>
+        </ul>
+        
+        <h3>Requisitos para Implementar en Netlify</h3>
+        <ul class="requirements">
+            <li>Cuenta en GitHub, GitLab o Bitbucket</li>
+            <li>Cuenta en Netlify</li>
+            <li>Git instalado en tu computadora</li>
+            <li>CLI de Netlify instalado</li>
+        </ul>
+        
+        <h3>Pasos para Implementar tu Página en Netlify</h3>
+        <p>Netlify aloja aplicaciones, pero para implementar una página HTML estática debes seguir estos pasos:</p>
+        
+        <h4>Crear tu proyecto en Netlify:</h4>
+        <ol class="steps">
+            <li>Visita <a href="https://app.netlify.com/signup/start" target="_blank" rel="noopener noreferrer">Netlify Sign Up</a> y regístrate usando GitHub, GitLab, Bitbucket o correo electrónico.</li>
+            <li>Después de registrarte, selecciona "Import from Git" para importar tu proyecto existente.</li>
+            <li>Conecta tu cuenta de repositorio (GitHub, GitLab, Bitbucket o Azure DevOps) y autoriza el acceso si es necesario.</li>
+            <li>Elige el repositorio que deseas desplegar. Puedes otorgar acceso a todos los repositorios o seleccionar uno específico.</li>
+            <li>Netlify detectará automáticamente tu configuración y comenzará el despliegue del proyecto.</li>
+        </ol>
+        
+        <h4>Personalizar tu sitio:</h4>
+        <ol class="steps">
+            <li>Dirígete a la sección de "Configuration" de tu proyecto en Netlify.</li>
+            <li>En el apartado de "General", selecciona "Change site name" para personalizar el nombre del sitio si lo deseas.</li>
+            <li>Tu sitio será accesible en el formato: <b>https://[nombre_del_sitio].netlify.app/</b></li>
+        </ol>
+        
+        <h4>Pasos adicionales para aplicaciones PHP:</h4>
+        <p>Para páginas HTML estáticas, sigue los pasos anteriores. Si deseas alojar aplicaciones PHP, agrega los siguientes archivos:</p>
+        <ol class="steps">
+            <li>Crea un archivo <code>index.php</code> con el siguiente contenido: <code>&lt;?php include_once("home.html"); ?&gt;</code></li>
+            <li>Crea un archivo <code>home.html</code> con tu contenido HTML, por ejemplo: <code>&lt;h1&gt;Hola Netlify&lt;/h1&gt;</code></li>
+            <li>Crea un archivo <code>composer.json</code> vacío con el contenido <code>{}</code> para que Netlify lo reconozca como una aplicación PHP.</li>
+            <li>En la terminal, inicializa un repositorio Git:</li>
+            <pre><code>git init</code></pre>
+            <li>Agrega los archivos:</li>
+            <pre><code>git add .</code></pre>
+            <li>Realiza un commit:</li>
+            <pre><code>git commit -m "Desplegando"</code></pre>
+            <li>Inicia sesión en Netlify usando el CLI:</li>
+            <pre><code>netlify login</code></pre>
+            <li>Crea una nueva app en Netlify:</li>
+            <pre><code>netlify apps:create nombre_de_app</code></pre>
+            <li>Sube los cambios a Netlify:</li>
+            <pre><code>git push netlify master</code></pre>
+        </ol>
+        
+        <p>Para actualizar tu proyecto, realiza los cambios, agrégalos y comitea:</p>
+        <pre><code>git add .<br>git commit -m "Mensaje sobre los cambios"<br>git push netlify master</code></pre>
+    </section>
+    <footer>
+
+        <p>Comparte en:</p>
+        <ul class="share">
+            <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://ashetemele.netlifyapp.com/">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/intent/tweet?text= Implementar%20una%20p%C3%A1gina%20HTML%20est%C3%A1tica%20en%20netlify&url=https://ashetemele.netlifyapp.com/&hashtags=DesarrolloWeb">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://api.whatsapp.com/send?text=Implementar%20una%20p%C3%A1gina%20HTML%20est%C3%A1tica%20en%20netlify%20https://ashetemele.netlifyapp.com/">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ashetemele.netlifyapp.com/">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+        <a href="https://www.idd.cl/">idd.cl</a> 2022
+    </footer>
+</div>
+</body>
+</html>
